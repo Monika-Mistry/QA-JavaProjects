@@ -1,19 +1,20 @@
 package person;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import library.LibraryItem;
 
 public abstract class Person {
 
 	private String name;
-	private int age;
+	private Date dateOfBirth;
 	private ArrayList<LibraryItem> itemsOnLoan = new ArrayList<LibraryItem>();
 	private double libraryFines = 0.0;
 
-	public Person(String name, int age) {
+	public Person(String name, Date dob) {
 		this.name = name;
-		this.age = age;
+		this.setDateOfBirth(dob);
 	}
 
 	public String getName() {
@@ -24,13 +25,6 @@ public abstract class Person {
 		this.name = name;
 	}
 
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
 
 	public ArrayList<LibraryItem> getItemsOnLoan() {
 		return itemsOnLoan;
@@ -46,6 +40,14 @@ public abstract class Person {
 
 	public void setLibraryFines(double libraryFines) {
 		this.libraryFines = libraryFines;
+	}
+
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public void setDateOfBirth(Date dob) {
+		this.dateOfBirth = dob;
 	}
 
 }

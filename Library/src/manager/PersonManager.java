@@ -1,6 +1,7 @@
 package manager;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import person.Adult;
 import person.Child;
@@ -16,27 +17,22 @@ public class PersonManager {
 		libraryUsers.add(p);
 	}
 
-	public void registerNewChild(String name, int age, int id, SchoolLevel schoolLevel) {
+	public void registerNewChild(String name, Date dob, int id, SchoolLevel schoolLevel) {
 
-		addNewLibraryUser(new Child(name, age, schoolLevel));
+		addNewLibraryUser(new Child(name, dob, schoolLevel));
 	}
 
-	public void registerNewAdult(String name, int age, int id, String jobTitle) {
-		addNewLibraryUser(new Adult(name, age, jobTitle));
+	public void registerNewAdult(String name, Date dob, int id, String jobTitle) {
+		addNewLibraryUser(new Adult(name, dob, jobTitle));
 	}
 
 	public void removeLibraryUser(Person p) {
 		libraryUsers.remove(p);
 	}
 
-	public Person searchPersonByNameAge(String name, int age) {
-		return libraryUsers.stream().filter(p -> (p.getName().equals(name) && p.getAge() == age)).findFirst().get();
+	public Person searchPersonByNameAge(String name, Date dob) {
+		return libraryUsers.stream().filter(p -> (p.getName().equals(name) && p.getDateOfBirth() == dob)).findFirst().get();
 	}
-
-	// private Person searchPersonById(int id) {
-	// return libraryUsers.stream().filter(p -> p.getPersonId() ==
-	// id).findFirst().get();
-	// }
 
 	public ArrayList<Person> getLibraryUsers() {
 		return libraryUsers;

@@ -1,11 +1,13 @@
 package person;
 
+import java.util.Date;
+
 public class Adult extends Person {
 
 	private String jobTitle;
 
-	public Adult(String name, int age, String jobTitle) {
-		super(name, age);
+	public Adult(String name, Date dob, String jobTitle) {
+		super(name, dob);
 		this.jobTitle = jobTitle;
 
 	}
