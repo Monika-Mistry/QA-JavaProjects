@@ -1,7 +1,0 @@
-package inheritance;
-
-public class Cat extends Animal {
-	
-	private String furColour;
-
-}

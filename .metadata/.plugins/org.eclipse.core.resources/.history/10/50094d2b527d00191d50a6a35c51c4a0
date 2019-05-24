@@ -1,5 +1,0 @@
-package librarymodel;
-
-public abstract class LibraryItem {
-
-}

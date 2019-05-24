@@ -1,6 +1,0 @@
-package librarymodel;
-
-public enum Status {
-	ONSHELF, ONLOAN, REFERENCE
-
-}
