@@ -36,7 +36,7 @@ public abstract class LibraryItem implements CheckOutable, CheckInable {
 		this.title = title;
 	}
 
-	public boolean isAvailable() {
+	public boolean isOnShelf() {
 		return this.status == Status.ONSHELF;
 
 	}
