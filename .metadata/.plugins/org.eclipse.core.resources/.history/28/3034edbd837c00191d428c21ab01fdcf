@@ -1,0 +1,9 @@
+package inheritance;
+
+public class Parrot extends Bird {
+
+	public Parrot(String name, int age, String colour, double wingspan) {
+		super(name, age, colour, wingspan);
+	}
+
+}

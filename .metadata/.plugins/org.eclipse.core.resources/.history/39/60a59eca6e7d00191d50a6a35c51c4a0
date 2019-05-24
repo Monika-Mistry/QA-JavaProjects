@@ -1,0 +1,20 @@
+package testing;
+
+import org.junit.Test;
+
+import manager.PersonManager;
+
+public class PersonManagerTest {
+
+	@Test
+	public void personShouldBeRemoved() {
+
+	}
+
+	@Test
+	public void searchForPersonShouldReturnPerson() {
+		PersonManager pm = new PersonManager();
+
+	}
+
+}

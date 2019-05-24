@@ -1,0 +1,15 @@
+package testing;
+
+import org.junit.Test;
+
+import manager.PersonManager;
+
+public class PersonManagerTest {
+
+	@Test
+	public void searchingForPersonReturnsCorrectPerson() {
+		PersonManager pm = new PersonManager();
+
+	}
+
+}

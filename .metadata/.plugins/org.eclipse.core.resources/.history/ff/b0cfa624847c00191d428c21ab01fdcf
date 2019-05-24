@@ -1,0 +1,12 @@
+package inheritance;
+
+public class Parrot extends Animal {
+
+	private double wingspan;
+
+	public Parrot(String name, int age, String colour, double wingspan) {
+		super(name, age, colour);
+		this.wingspan = wingspan;
+	}
+
+}

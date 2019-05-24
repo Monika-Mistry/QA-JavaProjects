@@ -1,0 +1,12 @@
+package librarymodel;
+
+public class Map extends LibraryItem {
+	
+	
+
+	public Map(int id, String title, Status status, int yearPublished) {
+		super(id, title, status, yearPublished);
+		
+	}
+
+}

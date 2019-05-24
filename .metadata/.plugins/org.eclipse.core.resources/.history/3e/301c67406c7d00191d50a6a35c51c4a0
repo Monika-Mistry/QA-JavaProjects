@@ -1,0 +1,9 @@
+package manager;
+
+import person.*;
+
+public class PersonManager {
+	
+	private List
+
+}

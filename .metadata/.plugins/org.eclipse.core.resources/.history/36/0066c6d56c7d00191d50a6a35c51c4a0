@@ -1,0 +1,32 @@
+package manager;
+
+import java.util.ArrayList;
+
+import person.Person;
+
+public class PersonManager {
+
+	private ArrayList<Person> libraryUsers = new ArrayList<Person>();
+
+	public void addNewLibraryUser(Person p) {
+		libraryUsers.add(p);
+	}
+	
+	public void removeLibraryUser(Person p) {
+		libraryUsers.remove(p);
+	}
+	
+	public Person searchPersonByNameAge(String name, int age) {
+		return libraryUsers.stream().filter(p -> (p.getName().equals(name) && p.getAge() == age)).findFirst().get();
+	}
+	
+
+	public ArrayList<Person> getLibraryUsers() {
+		return libraryUsers;
+	}
+
+	public void setLibraryUsers(ArrayList<Person> libraryUsers) {
+		this.libraryUsers = libraryUsers;
+	}
+
+}

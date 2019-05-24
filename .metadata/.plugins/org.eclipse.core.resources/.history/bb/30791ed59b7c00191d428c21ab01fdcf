@@ -1,0 +1,16 @@
+package model;
+
+public class Boat extends Vehicle {
+
+	private int numOfLifeJackets;
+	private double sizeOfBoat;
+	private double maxSpeed;
+
+	public Boat(int wheels, String fuelType, double engineCapacity, String regNumber, int numOfLifeJackets, double sizeOfBoat,
+			double maxSpeed) {
+		super(wheels, fuelType, engineCapacity, regNumber);
+		this.numOfLifeJackets = numOfLifeJackets;
+		this.sizeOfBoat = sizeOfBoat;
+	}
+
+}

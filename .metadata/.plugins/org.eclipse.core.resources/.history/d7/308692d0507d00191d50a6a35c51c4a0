@@ -1,0 +1,13 @@
+package personpackage;
+
+public class Child extends Person {
+	
+	private SchoolLevel schoolLevel;
+	private int adultId;
+
+	public Child(String name, int age, int personId, String schoolLevel, int adultId) {
+		super(name, age, personId);
+		
+	}
+
+}

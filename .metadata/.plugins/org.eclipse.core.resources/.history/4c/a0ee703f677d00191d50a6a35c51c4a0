@@ -1,0 +1,33 @@
+package librarymodel;
+
+import java.util.ArrayList;
+
+public class NonFiction extends Book {
+
+	private String category;
+	private int edition;
+
+	public NonFiction(int id, String title, Status status, int yearPublished, String isbn, int pages,
+			ArrayList<String> authors, String category, int edition) {
+		super(id, title, status, yearPublished, isbn, pages, authors);
+		this.category = category;
+		this.edition = edition;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public int getEdition() {
+		return edition;
+	}
+
+	public void setEdition(int edition) {
+		this.edition = edition;
+	}
+
+}

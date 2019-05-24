@@ -1,0 +1,12 @@
+package librarymodel;
+
+public class City extends Map {
+
+	private String city;
+
+	public City(int id, String title, Status status, int yearPublished, int scale, String country, String city) {
+		super(id, title, status, yearPublished, scale, country);
+		this.city = city;
+	}
+
+}

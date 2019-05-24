@@ -1,0 +1,10 @@
+package personpackage;
+
+public class Child extends Person {
+
+	public Child(String name, int age, int personId) {
+		super(name, age, personId);
+		// TODO Auto-generated constructor stub
+	}
+
+}

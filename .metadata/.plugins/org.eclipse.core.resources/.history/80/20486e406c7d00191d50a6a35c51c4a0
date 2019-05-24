@@ -1,0 +1,25 @@
+package manager;
+
+import java.util.ArrayList;
+
+import person.*;
+
+public class PersonManager {
+	
+	private ArrayList<Person> libraryUsers = new ArrayList<Person>();
+	
+	private void addPerson(Person p) {
+		libraryUsers.add(p);
+	}
+
+	public ArrayList<Person> getLibraryUsers() {
+		return libraryUsers;
+	}
+
+	public void setLibraryUsers(ArrayList<Person> libraryUsers) {
+		this.libraryUsers = libraryUsers;
+	}
+	
+	
+
+}

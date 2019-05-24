@@ -1,0 +1,12 @@
+package inheritance;
+
+public class Mammal extends Animal {
+	
+	protected String breed;
+	
+	public Mammal(String name , int age, String colour, String breed) {
+		super(name, age, colour);
+		this.breed = breed;
+	}
+
+}

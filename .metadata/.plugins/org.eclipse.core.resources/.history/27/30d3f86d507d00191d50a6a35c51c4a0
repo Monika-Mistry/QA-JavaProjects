@@ -1,0 +1,13 @@
+package personpackage;
+
+public class Adult extends Person {
+
+	private String jobTitle;
+
+	public Adult(String name, int age, int personId, String jobTitle) {
+		super(name, age, personId);
+		this.jobTitle = jobTitle;
+
+	}
+
+}

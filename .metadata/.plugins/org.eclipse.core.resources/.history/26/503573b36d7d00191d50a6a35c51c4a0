@@ -1,0 +1,11 @@
+package testing;
+
+public class PersonManagerTest {
+	
+	@Test
+	public void searchingForPersonReturnsCorrectPerson() {
+		PersonManager pm = new PersonManager();
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Person {
+	
+	String name;
+	int age;
+	String jobTitle;
+	
+	private String returnPersonProperties() {
+		return 
+	}
+
+}

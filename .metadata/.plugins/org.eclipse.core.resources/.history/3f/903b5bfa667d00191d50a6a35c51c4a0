@@ -1,0 +1,12 @@
+package librarymodel;
+
+public class Country extends Map {
+	
+	private String capital;
+
+	public Country(int id, String title, Status status, int yearPublished, int scale, String country, String capital) {
+		super(id, title, status, yearPublished, scale, country);
+		this.capital = capital
+	}
+
+}

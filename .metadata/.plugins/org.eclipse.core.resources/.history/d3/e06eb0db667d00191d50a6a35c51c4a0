@@ -1,0 +1,10 @@
+package librarymodel;
+
+public class City extends Map {
+
+	public City(int id, String title, Status status, int yearPublished, int scale, String country) {
+		super(id, title, status, yearPublished, scale, country);
+		// TODO Auto-generated constructor stub
+	}
+
+}

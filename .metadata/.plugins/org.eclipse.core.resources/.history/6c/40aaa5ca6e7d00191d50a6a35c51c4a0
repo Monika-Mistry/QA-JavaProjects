@@ -1,0 +1,23 @@
+package testing;
+
+import org.junit.Test;
+
+import manager.PersonManager;
+import person.SchoolLevel;
+
+public class PersonManagerTest {
+
+	@Test
+	public void personShouldBeRemoved() {
+
+	}
+
+	@Test
+	public void searchForPersonShouldReturnPerson() {
+		PersonManager pm = new PersonManager();
+		
+		pm.registerNewChild("Bob", 3, 1, SchoolLevel.NURSERY);
+
+	}
+
+}

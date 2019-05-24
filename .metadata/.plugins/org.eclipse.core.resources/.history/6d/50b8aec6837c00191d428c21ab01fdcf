@@ -1,0 +1,20 @@
+package inheritance;
+
+public class Cat extends Animal {
+
+	private int catLives;
+
+	public Cat(String name, int age, String colour, String breed, int catLives) {
+		super(name, age, colour, breed);
+		this.catLives = catLives;
+	}
+
+	public int getCatLives() {
+		return catLives;
+	}
+
+	public void setCatLives(int catLives) {
+		this.catLives = catLives;
+	}
+
+}

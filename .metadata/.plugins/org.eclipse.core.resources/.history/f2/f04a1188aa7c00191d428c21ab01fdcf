@@ -1,0 +1,17 @@
+package logic;
+
+import model.Boat;
+import model.Bus;
+import model.Car;
+import model.Garage;
+import model.Vehicle;
+
+public class App {
+	
+	public static void main(String[] args) {
+		Garage myGarage = new Garage();
+		Car myCar1 = new Car(4, "Petrol", 1.4, "AB12 3CD",5, 5, true, "blue");
+		
+	}
+
+}

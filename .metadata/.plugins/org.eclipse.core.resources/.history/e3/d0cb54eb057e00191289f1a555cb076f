@@ -1,0 +1,13 @@
+package translator;
+
+import java.util.HashMap;
+
+public class MorseCode {
+
+	private HashMap<String, Character> morseCode = new HashMap<>();
+
+	public HashMap<String, Character> getMorseCode() {
+		return morseCode;
+	}
+
+}

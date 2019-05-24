@@ -1,0 +1,35 @@
+
+public class Calculator {
+
+	private int numberA;
+	private int numberB;
+
+	public Calculator() {
+		this.numberA = ;
+		this.numberB = ;
+	}
+
+	public void setFirstNumber(int num) {
+		numberA = num;
+	}
+
+	public void setSecondNumber(int num) {
+		numberB = num;
+	}
+
+	private int addTwoNumbers() {
+		return numberA + numberB;
+	}
+
+	private int subtractTwoNumbers() {
+		return numberA - numberB;
+	}
+
+	private int divideTwoNumbers() {
+		return numberA / numberB;
+	}
+
+	private int multiplyTwoNumbers() {
+		return numberA * numberB;
+	}
+}

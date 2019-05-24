@@ -1,0 +1,14 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	@Test
+	public void multiplyByZeroIntegerReturnsZero() {
+
+		Calculator calc = new Calculator(0, 5);
+		assertEquals("0 * 5 must be 0", 0, calc.calculate('*'));
+	}
+
+}

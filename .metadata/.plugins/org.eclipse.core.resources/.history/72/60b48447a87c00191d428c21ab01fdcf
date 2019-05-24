@@ -1,0 +1,52 @@
+package model;
+
+import java.util.ArrayList;
+
+public class Garage {
+
+	private ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
+
+	public void addVehicle(Vehicle v) {
+		vehicleList.add(v);
+	}
+
+	public ArrayList<Vehicle> getVehicleList() {
+		return vehicleList;
+	}
+
+	public void setVehicleList(ArrayList<Vehicle> vehicleList) {
+		this.vehicleList = vehicleList;
+	}
+
+	private void fixAllVehicles() {
+		for (Vehicle v : vehicleList) {
+			switch (v.getClass().getCanonicalName()) {
+			case "Car":
+				System.out.println("The total cost to fix your vehicle is £" + v.engineCapacity * 100);
+				break;
+			case "Boat":
+				System.out.println("The total cost to fix your vehicle is £" + v.engineCapacity * 150);
+				break;
+			case "Bus":
+				System.out.println("The total cost to fix your vehicle is £" + v.engineCapacity * 250);
+				break;
+			}
+		}
+
+	}
+
+	public void fixVehicle(Vehicle v) {
+		switch (v.getClass().getCanonicalName()) {
+		case "Car":
+			System.out.println("The total cost to fix your vehicle is £" + v.engineCapacity * 100);
+			break;
+		case "Boat":
+			System.out.println("The total cost to fix your vehicle is £" + v.engineCapacity * 150);
+			break;
+		case "Bus":
+			System.out.println("The total cost to fix your vehicle is £" + v.engineCapacity * 250);
+			break;
+		}
+	}
+
+}

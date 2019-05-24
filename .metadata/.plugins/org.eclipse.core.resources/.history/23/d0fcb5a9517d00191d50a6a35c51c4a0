@@ -1,0 +1,5 @@
+package librarymodel;
+
+public enum Status {
+
+}

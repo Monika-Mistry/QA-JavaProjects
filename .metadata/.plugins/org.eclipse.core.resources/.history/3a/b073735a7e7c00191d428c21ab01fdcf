@@ -1,0 +1,22 @@
+package inheritance;
+
+public class Tortoise extends Animal {
+
+	private int lifeExpectancy;
+	private String favouriteFood;
+
+	public Tortoise(String name, int age, String colour, int lifeExpectancy, String favouriteFood) {
+		super(name, age, colour);
+		this.lifeExpectancy = lifeExpectancy;
+		this.favouriteFood = favouriteFood;
+	}
+
+	public int getLifeExpectancy() {
+		return lifeExpectancy;
+	}
+
+	public void setLifeExpectancy(int lifeExpectancy) {
+		this.lifeExpectancy = lifeExpectancy;
+	}
+
+}

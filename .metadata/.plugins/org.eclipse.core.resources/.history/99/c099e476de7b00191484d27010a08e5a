@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+public class Person {
+
+	String name;
+	int age;
+	String jobTitle;
+	static List<Person> people = new ArrayList<>();
+
+	public Person(String name, int age, String jobTitle) {
+		this.name = name;
+		this.age = age;
+		this.jobTitle = jobTitle;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public String toString() {
+		return "Name:" + name + " Age:" + age + " Job Title:" + jobTitle;
+	}
+
+}

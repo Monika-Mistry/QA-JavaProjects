@@ -1,0 +1,23 @@
+package personpackage;
+
+public class Child extends Person {
+
+	private SchoolLevel schoolLevel;
+
+	public Child(String name, int age, int personId, SchoolLevel schoolLevel) {
+		super(name, age, personId);
+		this.schoolLevel = schoolLevel;
+
+	}
+	
+
+	public SchoolLevel getSchoolLevel() {
+		return schoolLevel;
+	}
+
+	public void setSchoolLevel(SchoolLevel schoolLevel) {
+		this.schoolLevel = schoolLevel;
+	}
+
+
+}

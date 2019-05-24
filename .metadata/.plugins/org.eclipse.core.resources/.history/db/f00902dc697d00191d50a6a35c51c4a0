@@ -1,0 +1,23 @@
+package manager;
+
+import java.util.ArrayList;
+
+import library.LibraryItem;
+
+public class LibraryManager {
+
+	private ArrayList<LibraryItem> libraryRecords = new ArrayList<LibraryItem>();
+
+	public ArrayList<LibraryItem> getLibraryRecords() {
+		return libraryRecords;
+	}
+
+	public void setLibraryRecords(ArrayList<LibraryItem> libraryRecords) {
+		this.libraryRecords = libraryRecords;
+	}
+	
+	public void addLibraryItem(LibraryItem item) {
+		libraryRecords.add(item);
+	}
+
+}

@@ -1,0 +1,11 @@
+package personpackage;
+
+public enum SchoolLevel {
+
+	NONE,
+	PRESCHOOL,
+	NURSERY,
+	PRIMARY,
+	SECONDARY,
+	SIXTHFORMCOLLEGE
+}
